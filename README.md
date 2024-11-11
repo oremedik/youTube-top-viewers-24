@@ -37,3 +37,8 @@ We need data on the top UK YouTubers in 2024 that includes their
 - total videos uploaded
 
 Where is the data coming from? The data is sourced from Kaggle (an Excel extract), see here to find it.
+# Stages
+- Design
+- Developement
+- Testing
+- Analysis
