@@ -223,8 +223,8 @@ SELECT
 	COUNT(*) 
 AS
 	no_of_rows
-from
-	[view_]
+from view_youtube_data_from_python
+
 ## Column count check
 ```sql
 /*
