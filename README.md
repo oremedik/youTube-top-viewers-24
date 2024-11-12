@@ -212,3 +212,16 @@ FROM view_youtube_data_from_python
 - What data quality and validation checks are you going to create?
   
 Here are the data quality tests conducted:
+
+
+## Row count check
+```sql
+/*
+1. Row count check 
+*/
+SELECT
+	COUNT(*) 
+AS
+	no_of_rows
+from
+	[view_]
