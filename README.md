@@ -225,3 +225,17 @@ AS
 	no_of_rows
 from
 	[view_]
+## Column count check
+```sql
+/*
+2. Column count check
+*/
+
+SELECT 
+	COUNT(*) AS COLUMN_COUNT
+FROM
+	INFORMATION_SCHEMA.COLUMNS
+WHERE 
+	TABLE_NAME = 'view_'
+
+```
