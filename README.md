@@ -85,3 +85,18 @@ Some of the data visuals that may be appropriate in answering our questions incl
 | GitHub | Hosting the project documentation and version control |
 | Mokkup AI | Designing the wireframe/mockup of the dashboard | 
 
+# Development
+
+## Pseudocode
+
+What's the general approach in creating this solution from start to finish?
+
+1. Get the data
+2. Explore the data in Excel
+3. Load the data into SQL Server
+4. Clean the data with SQL
+5. Test the data with SQL
+6. Visualize the data in Power BI
+7. Generate the findings based on the insights
+8. Write the documentation + commentary
+9. Publish the data to GitHub Pages
