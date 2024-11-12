@@ -144,30 +144,41 @@ And here is a tabular representation of the expected schema for the clean data:
 
 # Transform the data
 
---Data Cleaning Steps
---1. Remove the non-relevant columns
---2. Extract the Youtube Channel name from the first column
---3. Rename the column Name
+## Data Cleaning Steps
+```sql
+/*
+# 1. Remove the non-relevant columns
+# 2. Extract the Youtube Channel name from the first column
+# 3. Rename the column Name
+*/
 
---SELECT
---NOMBRE,
---total_subscribers,
---total_views,
---total_videos
---FROM
---youtube_data_from_python
+-- 1.
+
+SELECT
+      NOMBRE,
+      total_subscribers,
+      total_views,
+      total_videos
+FROM
+      youtube_data_from_python
 
 CREATE VIEW vieww_youtube_data_from_python AS
 
+-- 2.
+  
 SELECT
-CAST(SUBSTRING (NOMBRE, 1, CHARINDEX('@', NOMBRE)-1) 
-AS VARCHAR(100)) 
+      CAST(SUBSTRING (NOMBRE, 1, CHARINDEX('@', NOMBRE)-1) 
+AS VARCHAR(100))
+
+-- 3.
 
 AS 
-Channel_name,
-Total_Subscribers,
-Total_Views,
-Total_Videos
+      Channel_name,
+      Total_Subscribers,
+      Total_Views,
+      Total_Videos
 
 FROM 
-youtube_data_from_python
+      youtube_data_from_python
+
+```
