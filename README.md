@@ -123,16 +123,16 @@ The cleaned data should meet the following criteria and constraints:
 - No column should contain null values, indicating complete data for all records.
 - Below is a table outlining the constraints on our cleaned dataset:
 
-|Property |Description
-|Number of Rows	|100
-|Number of Columns	|4
+| Property | Description |
+| Number of Rows	| 100 |
+| Number of Columns	| 4 |
 And here is a tabular representation of the expected schema for the clean data:
 
-|Column Name	|Data Type|	Nullable|
-|channel_name	|VARCHAR|	NO|
-|total_subscribers	|INTEGER|	NO|
-|total_views	|INTEGER|	NO|
-|total_videos	|INTEGER|	NO|
+| Column Name	| Data Type |	Nullable|
+| channel_name	| VARCHAR |	NO |
+| total_subscribers	| INTEGER |	NO |
+| total_views	| INTEGER |	NO |
+| total_videos	| INTEGER |	NO |
 
 ## What steps are needed to clean and shape the data into the desired format?
 
