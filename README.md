@@ -207,3 +207,8 @@ SELECT CAST(SUBSTRING(NOMBRE, 1, CHARINDEX('@', NOMBRE )-1) AS VARCHAR(100)) AS
 FROM view_youtube_data_from_python
 
 ```
+
+# Testing
+- What data quality and validation checks are you going to create?
+  
+Here are the data quality tests conducted:
