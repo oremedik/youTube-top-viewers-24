@@ -189,3 +189,24 @@ FROM
       youtube_data_from_python
 
 ```
+
+# Create the SQL view
+```sql
+/*
+# 1. Create a view to store the transformed data
+# 2. Cast the extracted channel name as VARCHAR(100)
+/*
+
+CREATE
+      VIEW view_youtube_data_from_python AS
+
+SELECT CAST
+      (SUBSTRING(NOMBRE, 1, CHARINDEX('@', NOMBRE )-1) AS VARCHAR(100)) AS 
+
+      Channel_Name ,
+      total_subscribers,
+      total_views,
+      total_videos
+
+
+FROM view_youtube_data_from_python
