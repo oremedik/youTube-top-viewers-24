@@ -110,3 +110,32 @@ This is the stage where you have a scan of what's in the data, errors, inconcsis
 3. The first column contains the channel ID with what appears to be channel IDS, which are separated by a @ symbol - we need to extract the channel names from this.
 4. Some of the cells and header names are in a different language - we need to confirm if these columns are needed, and if so, we need to address them.
 5. We have more data than we need, so some of these columns would need to be removed
+
+# Data cleaning
+What do we expect the clean data to look like? (What should it contain? What contraints should we apply to it?)
+
+The aim is to refine our dataset to ensure it is structured and ready for analysis.
+
+The cleaned data should meet the following criteria and constraints:
+
+- Only relevant columns should be retained.
+- All data types should be appropriate for the contents of each column.
+- No column should contain null values, indicating complete data for all records.
+- Below is a table outlining the constraints on our cleaned dataset:
+
+|Property |Description
+|Number of Rows	|100
+|Number of Columns	|4
+And here is a tabular representation of the expected schema for the clean data:
+
+|Column Name	|Data Type|	Nullable|
+|channel_name	|VARCHAR|	NO|
+|total_subscribers	|INTEGER|	NO|
+|total_views	|INTEGER|	NO|
+|total_videos	|INTEGER|	NO|
+
+## What steps are needed to clean and shape the data into the desired format?
+
+- Remove unnecessary columns by only selecting the ones you need
+- Extract Youtube channel names from the first column
+- Rename columns using aliases
