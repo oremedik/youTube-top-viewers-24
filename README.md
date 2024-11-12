@@ -141,3 +141,7 @@ And here is a tabular representation of the expected schema for the clean data:
 - Remove unnecessary columns by only selecting the ones you need
 - Extract Youtube channel names from the first column
 - Rename columns using aliases
+
+# Transform the data
+
+
