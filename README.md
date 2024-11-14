@@ -263,3 +263,26 @@ WHERE
 This shows the Top UK Youtubers in 2024 so far.
 
 ## DAX Measures
+
+### 1. Total Subscribers (M)
+```sql
+Total Subcribers(M) = 
+VAR million = 1000000
+VAR sumOfSubscribers = SUM(vieww_youtube_data_from_python[Total_subscribers])
+VAR totalsubscribers = DIVIDE(sumofsubscribers, million)
+RETURN TotalSubscribers
+```
+### 2. Total Views (B)
+```sql
+Total Views (B) = 
+VAR Billion =1000000000
+VAR sumOfTotalviews = SUM(vieww_youtube_data_from_python[Total_Views])
+VAR Totalviews = DIVIDE(sumOfTotalviews, Billion)
+RETURN TotalViews
+```
+### 3. Total Videos
+```sql
+Total Videos = 
+VAR totalvideos = SUM(vieww_youtube_data_from_python[Total_videos])
+
+RETURN totalvideos
