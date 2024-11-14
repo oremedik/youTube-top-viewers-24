@@ -241,3 +241,15 @@ FROM
 	INFORMATION_SCHEMA.COLUMNS
 WHERE 
 	TABLE_NAME = view_youtube_data_from_python
+```
+
+# Data type
+
+SELECT 
+	column_name,
+	data_type
+FROM
+	INFORMATION_SCHEMA.COLUMNS
+WHERE 
+	TABLE_NAME = view_youtube_data_from_python
+
