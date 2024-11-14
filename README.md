@@ -286,3 +286,33 @@ Total Videos =
 VAR totalvideos = SUM(vieww_youtube_data_from_python[Total_videos])
 
 RETURN totalvideos
+````
+### 4. Average views per Videos
+```sql
+Avg Views Per Videos(M) = 
+VAR SumOfTotalViews = SUM(vieww_youtube_data_from_python[total_views])
+VAR SUMOfTotalVideos = Sum(vieww_youtube_data_from_python[total_videos])
+VAR avgViewsPerVideo = DIVIDE(SumOfTotalViews,SUMOfTotalVideos, BLANK())
+VAR finalAvgViewsPerVideo = DIVIDE(avgViewsPerVideo,1000000,BLANK())
+
+RETURN FinalAvgViewsPerVideo
+```
+
+### 5. Subscribers Engagement Rate
+```sql
+Subscriber Engagement Rate = 
+VAR SumofTotalSubscribers = SUM(vieww_youtube_data_from_python[Total_Subscribers])
+VAR SumofTotalVideos = SUM(vieww_youtube_data_from_python[Total_Videos])
+VAR SubscriberEngRate = DIVIDE(SumofTotalSubscribers, SumofTotalVideos, BLANK())
+
+RETURN SubscriberEngRate
+```
+### 6. Views Per Subscriber
+```sql
+Views Per Subscriber = 
+VAR SumofTotalViews = SUM(vieww_youtube_data_from_python[Total_Views])
+VAR SumofTotalSubscribers = SUM(vieww_youtube_data_from_python[Total_Subscribers])
+VAR ViewsPerSubscribers =  DIVIDE(SumofTotalViews, SumofTotalSubscribers, BLANK())
+
+RETURN ViewsPerSubscribers
+```
