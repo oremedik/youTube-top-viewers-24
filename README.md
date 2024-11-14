@@ -253,3 +253,13 @@ FROM
 WHERE 
 	TABLE_NAME = view_youtube_data_from_python
 ```
+
+
+# Visualization
+## Results
+- What does the dashboard look like?
+
+
+This shows the Top UK Youtubers in 2024 so far.
+
+## DAX Measures
