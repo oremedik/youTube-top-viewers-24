@@ -222,10 +222,14 @@ Here are the data quality tests conducted:
 SELECT
 	COUNT(*) 
 AS
-	no_of_rows
+no_of_rows
 from view_youtube_data_from_python
 
-## Column count check
+```
+
+# Column count check
+
+
 ```sql
 /*
 2. Column count check
@@ -236,6 +240,4 @@ SELECT
 FROM
 	INFORMATION_SCHEMA.COLUMNS
 WHERE 
-	TABLE_NAME = 'view_'
-
-```
+	TABLE_NAME = view_youtube_data_from_python
