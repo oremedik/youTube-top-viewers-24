@@ -339,4 +339,15 @@ Here are the key questions we need to answer for our marketing client:
 6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
 
 
-
+| Rank | Channel Name         | Subscribers (M) |
+|------|----------------------|-----------------|
+| 1    | NoCopyrightSounds    | 33.60           |
+| 2    | DanTDM               | 28.60           |
+| 3    | Dan Rhodes           | 26.50           |
+| 4    | Miss Katy            | 24.50           |
+| 5    | Mister Max           | 24.40           |
+| 6    | KSI                  | 24.10           |
+| 7    | Jelly                | 23.50           |
+| 8    | Dua Lipa             | 23.30           |
+| 9    | Sidemen              | 21.00           |
+| 10   | Ali-A                | 18.90           |
