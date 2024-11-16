@@ -527,7 +527,7 @@ Potential revenue per video = 10,200 x $5= $51,000
 
 Campaign cost (11-videos @ $5,000 each) = $55,000
 
-Net profit = $51,000 - $55,000 = -$4,000 (potential loss)
+#### Net profit = $51,000 - $55,000 = -$4,000 (potential loss)
 
 b. Manchester City
 
@@ -541,7 +541,7 @@ Potential revenue per video = 4,800 x $5= $24,000
 
 Campaign cost (11-videos @ $5,000 each) = $55,000
 
-Net profit = $24,000 - $55,000 = -$31,000 (potential loss)
+#### Net profit = $24,000 - $55,000 = -$31,000 (potential loss)
 
 b. Yogscast
 
@@ -555,7 +555,7 @@ Potential revenue per video = 14,200 x $5= $71,000
 
 Campaign cost (11-videos @ $5,000 each) = $55,000
 
-Net profit = $71,000 - $55,000 = $16,000 (profit)
+#### Net profit = $71,000 - $55,000 = $16,000 (profit)
 
 Best option from category: Yogscast
 
