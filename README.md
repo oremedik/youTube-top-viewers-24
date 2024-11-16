@@ -412,7 +412,8 @@ For this analysis, we'll prioritize analysing the metrics that are important in 
 - videos uploaded
 
 # Validation
-1. Youtubers with the most subscribers
+## 1. Youtubers with the most subscribers
+
 Calculation breakdown
 Campaign idea = product placement
 
@@ -459,3 +460,51 @@ Campaign cost (one-time fee) = $50,000
 #### Net profit = $1,115,000 - $50,000 = $1,065,000
 
 Best option from category: Dan Rhodes
+
+## SQL query
+```sql
+/*
+
+1. Define the Variables
+2. Create a CTE that rounds the average views per video
+3. Select the tables that are required for the analysis
+4. Filter the result with the Youtube channel with highest subscribers
+5. 0rder by net_profit from highest to lowest 
+
+
+
+*/
+--STEP 1
+DECLARE @ConversionRate FLOAT= 0.02;				--The Conversion rate at 2%
+DECLARE @ProductCost MONEY= 5.0;					--The Product cost at $5
+DECLARE @CampaignCost MONEY= 50000;					--The Campaign cost at $50000
+
+--STEP 2
+WITH ChannelData AS(
+	SELECT
+		Channel_name,
+		Total_Views,
+		Total_Videos,
+		ROUND((CAST(Total_Views as FLOAT) / Total_Videos), -4) AS rounded_avg_views_per_video
+	FROM youtube_db.dbo.vieww_youtube_data_from_python
+)
+--SELECT * FROM ChannelData
+
+--STEP 3
+SELECT 
+	Channel_name,
+	rounded_avg_views_per_video,
+	(rounded_avg_views_per_video * @ConversionRate) AS Potential_unit_sold_per_video,
+	(rounded_avg_views_per_video * @ConversionRate * @productCost) AS Potential_revenue_per_video,
+	(rounded_avg_views_per_video * @ConversionRate * @productCost) - @CampaignCost AS Net_profit
+FROM 
+	ChannelData
+
+--STEP 4
+WHERE
+	Channel_name IN ('NoCopyrightSounds', 'DanTDM', 'Dan Rhodes')
+
+--STEP 5
+ORDER BY
+	Net_profit DESC
+```
