@@ -560,7 +560,7 @@ Net profit = $71,000 - $55,000 = $16,000 (profit)
 Best option from category: Yogscast
 
 ## SQL query
-
+```sql
 /* 
 # 1. Define variables
 # 2. Create a CTE that rounds the average views per video
@@ -569,7 +569,6 @@ Best option from category: Yogscast
 # 5. Sort results by net profits (from highest to lowest)
 */
 
-```sql
 -- 1.
 DECLARE @conversionRate FLOAT = 0.02;           -- The conversion rate @ 2%
 DECLARE @productCost FLOAT = 5.0;               -- The product cost @ $5
