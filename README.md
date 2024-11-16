@@ -660,7 +660,7 @@ Campaign cost (3-month contract) = $130,000
 
 Best option from category: Mister Max
 
-# SQL query
+## SQL query
 
 ```sql
 /*
